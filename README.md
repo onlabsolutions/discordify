@@ -2,7 +2,7 @@
 
 Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/discordify`. To experiment with that code, run `bin/console` for an interactive prompt.
 
-TODO: Delete this and the text above, and describe your gem
+Discordify aims to be a simpler way to push notifications to discord channel
 
 ## Installation
 
@@ -22,7 +22,23 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+Discordify.push_message(avatar, username, content, webhook)
+```
+
+### Example
+webhook = 'https://discordapp.com/api/webhooks/9090/NIJx9jf2t59'
+
+avatar = 'http://www.gravatar.com/avatar/?d=identicon'
+
+username = 'Yo'
+
+content = 'This is a test'
+
+```ruby
+Discordify.push_message(avatar, username, content, webhook)
+ # it pushes the message "This is a test" to discord
+```
 
 ## Development
 
