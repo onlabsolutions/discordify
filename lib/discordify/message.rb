@@ -4,7 +4,7 @@ module Discordify
   class << self
 
     def push_message(avatar, username, content, webhook = nil)
-      client(webhook).post_json(user: username, message: content, avatar: avatar)
+      client(webhook).post_json(username: username, message: content, avatar: avatar)
     end
 
     def push_message_async(avatar, username, content, webhook = nil)
