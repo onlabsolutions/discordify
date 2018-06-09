@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://example.com/test
+    body:
+      encoding: UTF-8
+      string: '{"content":"Test","username":null,"avatar_url":"http://www.gravatar.com/avatar/?d=identicon"}'
+    headers:
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 204
+      message: NO CONTENT
+    headers:
+      Date:
+      - Sat, 09 Jun 2018 20:11:24 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Content-Length:
+      - '0'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d1a404ef15b3861e94021a0166569ebff1528575084; expires=Sun, 09-Jun-19
+        20:11:24 GMT; path=/; domain=.discordapp.com; HttpOnly
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Ratelimit-Limit:
+      - '5'
+      X-Ratelimit-Remaining:
+      - '4'
+      X-Ratelimit-Reset:
+      - '1528575087'
+      Via:
+      - 1.1 google
+      Alt-Svc:
+      - clear
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 42863f452bd357b3-IAD
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 09 Jun 2018 20:11:24 GMT
+recorded_with: VCR 4.0.0

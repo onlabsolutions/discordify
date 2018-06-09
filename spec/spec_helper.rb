@@ -3,6 +3,9 @@
 require 'bundler/setup'
 require 'discordify'
 require 'pry'
+require 'webmock/rspec'
+
+Dir[File.dirname(__FILE__) + "/support/**/*.rb"].each {|f| require f }
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure

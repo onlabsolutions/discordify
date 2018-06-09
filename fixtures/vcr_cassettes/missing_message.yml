@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://example.com/test
+    body:
+      encoding: UTF-8
+      string: '{"content":null,"username":"CI","avatar_url":"http://www.gravatar.com/avatar/?d=identicon"}'
+    headers:
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 400
+      message: BAD REQUEST
+    headers:
+      Date:
+      - Sat, 09 Jun 2018 20:05:18 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '58'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=db64cc1a60e88d7abf38411b817663bb11528574718; expires=Sun, 09-Jun-19
+        20:05:18 GMT; path=/; domain=.discordapp.com; HttpOnly
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Ratelimit-Limit:
+      - '5'
+      X-Ratelimit-Remaining:
+      - '4'
+      X-Ratelimit-Reset:
+      - '1528574721'
+      Via:
+      - 1.1 google
+      Alt-Svc:
+      - clear
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 42863659587557ad-IAD
+    body:
+      encoding: UTF-8
+      string: '{"code": 50006, "message": "Cannot send an empty message"}'
+    http_version: 
+  recorded_at: Sat, 09 Jun 2018 20:05:19 GMT
+recorded_with: VCR 4.0.0
